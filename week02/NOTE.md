@@ -87,13 +87,36 @@ eg: 上下文相关
 - Statement
 - Structure
 - Program
-4 Token （有效的东西）
-- Literal: 直接量
-    - Number
-    - 揭秘 0.1 + 0.2 != 0.3
-    - String
-    - Boolean
-    - Null
-    - Undefindy
 
-5 float 的精度问题
+- InputElement
+    - WhiteSpace
+        - <TAB>
+        - <VT>
+        - <FF>
+        - <SP> 
+        - <NBSP> 处理排版，不会断行
+        - <ZWNBSP> 零宽空格
+        - <USP>
+    - LineTerminator 换行符
+    - Comment 注释
+    - Token 有效的东西
+        - Punctuator 符号
+        - IdentifierName 标识符
+            - Keywords
+            - Identifier
+            - Future reserved Keywords: enum
+        - Literal 直接量
+            - Number
+                - 进制位写法代替parseInt
+            - String
+                - Character
+                - Code Point
+                - Encode
+            - Boolean
+            - Object
+            - Null
+            - Undefined
+            - Symbol
+
+
+
